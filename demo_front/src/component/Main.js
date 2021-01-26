@@ -6,7 +6,7 @@ import React from "react";
 import {Link, Route} from "react-router-dom";
 import styled from "styled-components";
 import backgroundImage2 from '../image/backgroundImage2.png';
-import IntroText from "./IntroText";
+import MainText from "./MainText";
 import Logo from "./Logo";
 import My from "./My";
 
@@ -41,7 +41,7 @@ const Main = () => {
         <MainDiv>
             <Logo/>
             <My/>
-            <IntroText/>
+            <MainText/>
             <Link to = "tableCheck">
                 <TableCreButton>시간표만들러가기</TableCreButton>
             </Link>

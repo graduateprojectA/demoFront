@@ -20,6 +20,25 @@ const ClassCheckDiv = styled.div`
     background-size: cover;
 `;
 
+const ClassCheckWrapWrapDiv = styled.div`
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -370px;
+    border: solid 1px;
+    height: 585px;
+    width: 740px;
+    background-color: #fff5ee;
+    opacity: 0.8;
+    border: solid 5px #00462A;
+    border-radius: 10px;
+`;
+
+const ClassCheckP = styled.p`
+    text-align: center; 
+    font-size: 1.2em;
+`;
+
 const NextA = styled.a`
     font-size: 40px;
     cursor: pointer;
@@ -53,13 +72,15 @@ const ClassCheck = () => {
         <ClassCheckDiv>
             <Logo/>
             <My/>
+            <ClassCheckWrapWrapDiv>
+                <ClassCheckP>제외할 수업을 선택해주세요.</ClassCheckP>
+            </ClassCheckWrapWrapDiv>
             <Link to = "./tableCheck">
                 <PreA>&#10094;</PreA> 
             </Link>
             <Link to = "./ClassCheck">
                 <NextA>&#10095;</NextA>
             </Link>
-
         </ClassCheckDiv>    
     );
 };
